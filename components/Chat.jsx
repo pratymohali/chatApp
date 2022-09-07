@@ -17,8 +17,8 @@ function Chat() {
       <SignOut />
       <div className="msgs">
                 {messages.map(({ id, text, photoURL, uid }) => (
-                    <div>
-                        <div key={id} className={`msg ${uid === auth.currentUser.uid ? 'sent' : 'received'}`}>
+                    <div key={id}>
+                        <div  className={`msg ${uid === auth.currentUser.uid ? 'sent' : 'received'}`}>
                         
                             <p>{text}</p>
                         </div>
