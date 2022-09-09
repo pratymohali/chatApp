@@ -1,14 +1,15 @@
 import Head from 'next/head'
 
 import {useAuthState} from "react-firebase-hooks/auth"
-import {auth} from "./firebase"
+import {auth} from "../components/firebase.js"
 import Chat from "../components/Chat.jsx"
 import SignIn from '../components/SignIn.jsx'
 
 
 
-export default function Home() {
-  const [user] = useAuthState(auth)
+ function Home() {
+  const [user] = useAuthState(auth);
+
   return (
 <>
       <Head>
@@ -25,3 +26,5 @@ export default function Home() {
 </>
   )
 }
+
+export default Home;

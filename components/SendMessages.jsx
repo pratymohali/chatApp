@@ -3,7 +3,7 @@ import firebase from "firebase/compat/app";
 import { Button, Input } from '@material-ui/core';
 
 import React, { useState } from 'react'
-import { auth, db } from '../pages/firebase';
+import { auth, db } from './firebase';
 
 function SendMessages() {
   const [msg, setMsg] = useState('')
